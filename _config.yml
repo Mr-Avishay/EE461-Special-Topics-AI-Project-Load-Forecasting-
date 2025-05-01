@@ -9,7 +9,7 @@ url: "https://<your-github-username-or-org>.github.io/EE461-Special-Topics-AI-Pr
 # Author information
 author:
   name: "Mr-Avishay"
-  email: "your-email@example.com"
+
 
 # Theme and Layout
 theme: "jekyll-theme-minimal" # You can choose from built-in themes or custom themes
