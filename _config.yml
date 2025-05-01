@@ -1,1 +1,36 @@
+# Configuration File for Blog Setup
 
+# Site settings
+title: "EE461 Special Topics AI Project Blog"
+description: "Exploring Load Forecasting for Tonga Power Limited using AI Techniques"
+baseurl: "" # Leave blank for root
+url: "https://<your-github-username-or-org>.github.io/EE461-Special-Topics-AI-Project-Load-Forecasting-"
+
+# Author information
+author:
+  name: "Mr-Avishay"
+  email: "your-email@example.com"
+
+# Theme and Layout
+theme: "jekyll-theme-minimal" # You can choose from built-in themes or custom themes
+markdown: "kramdown"
+highlighter: "rouge" # Syntax highlighting for code blocks
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Blog settings
+paginate: 5 # Number of posts per page
+paginate_path: "/page:num/"
+
+# Build settings
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+
+# Social Links
+social_links:
+  github: "https://github.com/Mr-Avishay"
