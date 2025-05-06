@@ -42,10 +42,10 @@ The above scatter plot shows the Generated(total electricity generated), Sent ou
 
 In the above Pareto chart, each bar gives the component wtih the height of the bar showing how much that single component contributes. Meanwhile the redline gives the cumulative percentage of the components combined. Here, it can be seen that 80% is reached by the third component.
 
-# Remarks
+## Remarks
 Upon completion of Data collection and preprocessing which included examing, cleansing and visualizing the data, normalization was carried out along with PCA. In the coming weeks, other linear techniques such as LDA will be explored and non linear techniques such as CCA will also be explored before moving onto feature engineering.
 
-### Week 7 Progress: Advanced Exploratory Analysis
+# Week 7 Progress: Advanced Exploratory Analysis
 
 ## Objective For Week 7
 - Explore deeper relationships through PCA, CCA, and t-SNE
