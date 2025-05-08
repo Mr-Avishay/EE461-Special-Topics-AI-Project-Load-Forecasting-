@@ -170,3 +170,49 @@ This represents the different weather patterns which in this case will be summer
 # Remark
 So far 4 models have been trained and tested, ARIMA, SARIMA, LSTM, CNN and Linear Regression. After inspecting the results obtained, the ARIMA and Linear Regression model produced the best results as the RMSE, MAE and MAPE values more desirable. However, the next tasks will include improving all the models particularly the LSTM and CNN by adding more layers and complexity to the model in order to increase the performance of the models. Also, at least two other models will be researched on in the coming weeks and trained, allowing a wider range possible models to choose from. 
   
+### Week 10 Progress: Feature Engineering
+
+## Objectives For Week 10
+
+- Creating models for Generation Scheduling
+  
+##  MANUAL INPUT SECTION
+#  Total load demand for the month (in MWh)
+ totalLoad =  1400/720
+
+# Define generation sites manually
+# Format: {'SiteName', 'Type', Capacity_MW}
+sites = {
+    %'Diesel Powerplant Popua', 'diesel', 600;
+    'Solar Farm Maama Mai ',      'solar',  1.412;
+    'Solar Farm Mata o e Laa',      'solar',  1.3;
+    'Solar Farm Singyes',    'solar',   2.13;
+    'Solar Farm Sunergise 1',    'solar',   2.3;
+    'Solar Farm Sunergise 2',    'solar',   2.3;
+    'Solar Farm Sunergise 3',    'wind',   2.3;
+    'Wind Farm I o Manumataongo',    'solar',   1.375;
+![image](https://github.com/user-attachments/assets/c7b0b95d-f90c-453c-beb7-3ce75bcfee97)
+
+The table above shows the Renewable sites with its Capacity in MW
+
+#  Generation Scheduling
+remainingLoad = totalLoad;
+
+for i = 1:height(genTable)
+    cap = genTable.Capacity(i);
+    alloc = min(cap, remainingLoad);
+    genTable.Allocated(i) = alloc;
+    remainingLoad = remainingLoad - alloc;
+    if remainingLoad <= 0
+        break;
+    end
+end
+
+# OUTPUT 
+
+ Generation Scheduling 
+ ![image](https://github.com/user-attachments/assets/97272852-7305-4793-b201-4555e3f9c243)
+ As evident fro the table above, the load demand is met and being supplied from two solar farm generation site. 
+
+## Remark
+So far the first priority for supplying load demand from Renewable Generations sites first and the remaining load demand to be supplied by Diesel Generators. Although this is not practical enough since solar irradiance and wind speed, there is still a need to turn ON diesel generators for spinning reserves. 
