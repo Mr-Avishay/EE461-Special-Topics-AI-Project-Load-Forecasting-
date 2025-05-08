@@ -215,4 +215,4 @@ end
  As evident fro the table above, the load demand is met and being supplied from two solar farm generation site. 
 
 ## Remark
-So far the first priority for supplying load demand from Renewable Generations sites first and the remaining load demand to be supplied by Diesel Generators. Although this is not practical enough since solar irradiance and wind speed, there is still a need to turn ON diesel generators for spinning reserves. 
+So far the first priority for supplying load demand from Renewable Generations sites first and the remaining load demand to be supplied by Diesel Generators. Although this is not practical enough since solar irradiance and wind speed, there is still a need to turn ON diesel generators for spinning reserves. For future works, there is a need to incorporate diesel generators into generation scheduling.
