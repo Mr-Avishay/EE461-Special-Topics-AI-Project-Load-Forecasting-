@@ -105,12 +105,68 @@ Upon completion of the PCA techniques the techniques to look at will be the:
 
 ## Tasks Completed
 - Feature creation:
-  - Lagged billed value
-  - Rolling 12-month average
-  - System efficiency
-  - Growth rate
-  - Seasonal encoding (sin/cos)
-- PCA, CCA, and t-SNE on engineered features
-- Final dy/dx plots
+Five Key Engineered Features
+          -  Lagged Bill
+This is used for predicting the current or the next months billed power or consumed power by utilizing the previous months data.
+          - 12  Month Rolling Average
+This uses the average of the last 12 months data to simply smooth out any irregularites.
+          - System Efficiency
+Summarizes the efficiency by comparing the generation with consumption(billed).
+          - Demand Growth Rate
+This represents the growth rate of the demand in percentage. In order words, how fast the demand changes.
+          - Seasonal Encoding
+This represents the different weather patterns which in this case will be summer and winter(slightly colder period in Tonga) by using sine and cosine.
+- PCA on engineered features (dy/dx plots)
+  ![image](https://github.com/user-attachments/assets/699dd16e-a79e-4308-bd5b-c5c6f7bfa3c8)
 
+- CCA on engineered features (dy/dx plots)
+  ![image](https://github.com/user-attachments/assets/515a60f8-ed54-444b-8779-c10d3821a8b4)
+
+### Week 9 Progress: Feature Engineering
+
+## Objectives For Week 9
+
+- Creating models to test our data and predict values
+  
+## Modelling for our Original Features
+
+  - 1) The ARIMA - Autoregressive Integrated & Moving Average
+  
+  ![image](https://github.com/user-attachments/assets/a0de6dc7-590b-4efd-a87a-c3003f4b14e0)
+       
+  - 2) SARIMA - Seasonal Autoregressive Integrated & Moving Average
+  
+  ![image](https://github.com/user-attachments/assets/bd16a455-730a-4f8d-884f-0cd82a477e04)
+       
+  - 3) LSTM - Long Short Term Memory
+  
+  ![image](https://github.com/user-attachments/assets/fc2b293d-e74d-45fa-958a-ffbeca37e1c3)
+       
+  - 4) CNN -  Convolutionary Neural Newtworks
+       
+  ![image](https://github.com/user-attachments/assets/efb25707-2c9e-4b98-8094-c17bbf135d2b)
+
+   
+## Modelling for our Original features together with the Engineered Features
+
+  - 1) The ARIMA - Autoregressive Integrated & Moving Average
+       
+  ![image](https://github.com/user-attachments/assets/37766484-6ee2-4b9f-9572-b9d930993e51)
+
+
+  - 2) SARIMA - Seasonal Autoregressive Integrated & Moving Average
+       
+  ![image](https://github.com/user-attachments/assets/477f2e1c-8011-49b7-81aa-96b69d217f94)
+       
+  - 3) LSTM - Long Short Term Memory
+       
+  ![image](https://github.com/user-attachments/assets/4340192c-d89d-428e-98c4-9839aed6d6ab)
+
+
+  - 4) CNN -  Convolutionary Neural Newtworks
+       
+   ![image](https://github.com/user-attachments/assets/ad0143f6-e425-4239-bbd6-a81e0013f585)
+
+# Remark
+So far 4 models have been trained and tested, ARIMA, SARIMA, LSTM, CNN and Linear Regression. After inspecting the results obtained, the ARIMA and Linear Regression model produced the best results as the RMSE, MAE and MAPE values more desirable. However, the next tasks will include improving all the models particularly the LSTM and CNN by adding more layers and complexity to the model in order to increase the performance of the models. Also, at least two other models will be researched on in the coming weeks and trained, allowing a wider range possible models to choose from. 
   
