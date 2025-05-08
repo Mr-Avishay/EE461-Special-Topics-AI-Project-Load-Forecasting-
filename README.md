@@ -170,11 +170,12 @@ This represents the different weather patterns which in this case will be summer
 # Remark
 So far 4 models have been trained and tested, ARIMA, SARIMA, LSTM, CNN and Linear Regression. After inspecting the results obtained, the ARIMA and Linear Regression model produced the best results as the RMSE, MAE and MAPE values more desirable. However, the next tasks will include improving all the models particularly the LSTM and CNN by adding more layers and complexity to the model in order to increase the performance of the models. Also, at least two other models will be researched on in the coming weeks and trained, allowing a wider range possible models to choose from. 
   
-### Week 10 Progress: Feature Engineering
+### Week 10 Progress: Generation Scheduling
 
 ## Objectives For Week 10
 
 - Creating models for Generation Scheduling
+- Through Dr. Rahul an additional task is provided to accomplish
   
 ##  MANUAL INPUT SECTION
 #  Total load demand for the month (in MWh)
